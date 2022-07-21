@@ -1,9 +1,10 @@
+import examsRouter from '@modules/exams/routes/examRoutes';
+import laboratoryRouter from '@modules/laboratories/routes/laboratoryRoutes';
 import { Router } from 'express';
 
 const routes = Router();
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello Dev!' });
-});
+routes.use('/exams', examsRouter);
+routes.use('/laboratories', laboratoryRouter);
 
 export default routes;
