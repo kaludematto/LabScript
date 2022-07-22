@@ -12,5 +12,3 @@ export class ExamsRepository extends Repository<Exam> {
     return exam;
   }
 }
-
-export default EntityRepository;

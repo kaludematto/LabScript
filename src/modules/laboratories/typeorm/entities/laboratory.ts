@@ -1,7 +1,10 @@
+import Exam from '../../../exams/typeorm/entities/exams';
 import {
   Column,
   CreateDateColumn,
   Entity,
+  JoinTable,
+  ManyToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
@@ -16,6 +19,8 @@ class Laboratory {
   address: string;
   @Column()
   status: boolean;
+  @ManyToMany(() => Exam, exams => exams.laboratories)
+  exams: Exam[];
   @CreateDateColumn()
   created_at: Date;
   @UpdateDateColumn()
