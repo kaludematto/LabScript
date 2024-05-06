@@ -1,5 +1,3 @@
-API para gerenciamento de laboratórios
-
 ## Contexto
 
 Estamos desenvolvendo uma aplicação para as seguintes situações:
