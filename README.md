@@ -1,10 +1,4 @@
-# Teste Backend Alliar
-
-## Objetivo
-
-O objetivo do teste é:
-
-- Construir uma API para manutenção de laboratórios e exames.
+API para gerenciamento de laboratórios
 
 ## Contexto
 
